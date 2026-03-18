@@ -1,5 +1,4 @@
 ﻿<meta>
-  <info name="Save Command" author="CMHDev"/>
-  <assembly ref="System.IO.dll"/>
-  <script src="saved_pos.cs" type="server" lang="csharp" />
+  <info name="server" type="script"/>
+  <script src="bin/x64/Debug/netcoreapp3.1/server.dll"/>
 </meta>
