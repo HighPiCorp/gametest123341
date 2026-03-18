@@ -1,0 +1,20 @@
+{
+    "bind": "0.0.0.0",
+    "maxplayers": 1000,
+    "name": "SaintsWorld RP | saintsworld.net | X2 Donate [Roleplay][Voice]",
+    "gamemode": "roleplay",
+    "fqdn":"s1.saintsworld.net",
+    "stream-distance" : 250.0,
+    "announce": true,
+    "csharp": "enabled",
+    "port": 22005,
+    "voice-chat": true,
+    "voice-chat-sample-rate": 48000,
+    "allow-cef-debugging" : false,
+    "api-threading-debugging": false,
+    "sync-rate": 40,
+    "server-side-weapons-only-mode": true,
+    "synchronization-extrapolation-multiplier": 0.0,
+    "http-threads": 500,
+    "language": "ru"
+}

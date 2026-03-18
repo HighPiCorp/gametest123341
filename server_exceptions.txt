@@ -1,0 +1,28 @@
+==================[22.01.2023 23:34:23]==================
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at void GTANetworkMethods.ClientEvent.TriggerClientEventRel(Player player, string eventName, bool reliable, params object[] args)
+   at void NeptuneEvo.SDK.Trigger.ClientEvent(Player client, string eventName, params object[] args) in /opt/ragemp-srv/dotnet/resources/server/Trigger.cs:line 39
+   at void NeptuneEvo.SDK.Notify.Send(Player client, NotifyType type, NotifyPosition pos, string msg, int time) in /opt/ragemp-srv/dotnet/resources/server/Notify.cs:line 34
+   at void NeptuneEvo.Houses.HouseManager.RemoteEvent_RoommatesActions(Player player, params object[] arguments) in /opt/ragemp-srv/dotnet/resources/client/Houses/HouseManager.cs:line 2664
+   --- End of inner exception stack trace ---
+   at object RuntimeMethodHandle.InvokeMethod(object target, object[] arguments, Signature sig, bool constructor, bool wrapExceptions)
+   at object System.Reflection.RuntimeMethodInfo.Invoke(object obj, BindingFlags invokeAttr, Binder binder, object[] parameters, CultureInfo culture)
+=========================================================
+
+==================[23.01.2023 19:38:39]==================
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at void NeptuneEvo.Core.Admin.offBanPlayer(Player player, string name, int time, string reason) in /opt/ragemp-srv/dotnet/resources/client/Core/Admin.cs:line 833
+=========================================================
+
+==================[24.01.2023 03:32:11]==================
+MySqlConnector.MySqlException (0x80004005): Column 'hwid' cannot be null
+   at void System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+=========================================================
+
+==================[24.01.2023 03:32:11]==================
+MySqlConnector.MySqlException (0x80004005): Column 'hwid' cannot be null
+ ---> MySqlConnector.MySqlException (0x80004005): Column 'hwid' cannot be null
+   at async Task MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 49
+   at void MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 118
+=========================================================
