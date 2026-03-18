@@ -1,0 +1,20 @@
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.709 |  Warn | Utils | [Anika_Kamado] >>> [SETMYDATA: CHANGE] KEY: INTERACTIONCHECK VALUE: 30
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.709 |  Warn | Utils | [Anika_Kamado] >>> [SETMYDATA: CHANGE] KEY: BIZ_ID VALUE: 79
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.709 |  Warn | Utils | [Anika_Kamado] >>> [SETMYDATA: CHANGE] KEY: LAST_BIZ_ID VALUE: 79
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.709 |  Succ | Utils | [Anika_Kamado] >>> [SETMYDATA: ADDED] KEY: COLSHAPE_TYPE VALUE: Sim
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.709 |  Warn | Utils | [Anika_Kamado] >>> [SETMYDATA: CHANGE] KEY: QUEST_COLSHAPE_INTERACTION VALUE: 30
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.842 |  Info | BattlePass | [BattlePass] try to updateBPQuestIteration
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.842 |  Info | BattlePass | [BattlePass] type: 32
+Jul 25 20:56:47 ragemp ragemp-server[16312]: 20:56:47.842 |  Info | BattlePass | [BattlePass] bpQuestIsCyclic: {"ID":49,"Name":"Посмотреть в тест-драйве 100 машин.","Description":"-","Progress":100,"CurrentProgress":31.0,"Difficult":3,"HasConditions":true,"IsCyclic":true,"Type":32,"ColshapeName":"","IsComplete":false,"IsRewarded":false,"Date_end":"2023-07-26T04:00:00+03:00"}
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.021 |  Info | GM | Anika_Kamado INTERACTIONCHECK IS 30
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.021 |  Warn | Utils | [Anika_Kamado] >>> [SETMYDATA: CHANGE] KEY: CLOTHES_SHOP VALUE: 79
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.021 |  Info | Dimensions | Dimension 9997 is registered for Anika_Kamado.
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.428 | Error | BattlePass [Interactions] | TIMER SO FAST
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.428 |  Info | BattlePass | [BattlePass] try to updateBPQuestIteration
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.429 |  Info | BattlePass | [BattlePass] type: 1
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.679 |  Succ | Utils | [Kashmarik_Kalashnikov] >>> [ResetMyData: KEY] ENTITY TYPE: Player KEY: CARROOMTEST
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.679 |  Succ | Utils | [Kashmarik_Kalashnikov] >>> [ResetMyData: KEY] ENTITY TYPE: Player KEY: TESTDRIVE
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.679 |  Succ | Utils | [Kashmarik_Kalashnikov] >>> [ResetMyData: KEY] ENTITY TYPE: Player KEY: BEFORE_TEST_HP
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.982 |  Succ | Dimensions | [RequestPrivateDimension][Kashmarik_Kalashnikov][SUCCESS] DIM:9998
+Jul 25 20:56:48 ragemp ragemp-server[16312]: 20:56:48.982 |  Warn | Utils | [Kashmarik_Kalashnikov] >>> [SETMYDATA: CHANGE] KEY: INTERACTIONCHECK VALUE: 0
+Jul 25 20:56:49 ragemp ragemp-server[16312]: double free or corruption (out)
