@@ -1,0 +1,60 @@
+let browser = null;
+let inShape = false;
+
+/*mp.events.add("playerEnterColshape", (shape) => {
+    if (shape.name == "Garbage") {
+        mp.game.graphics.notify('Нажмите клавишу ~g~E!');
+        inShape = true;
+    }
+});
+
+mp.events.add("playerExitColshape", (shape) => {
+    if (shape.name == "Garbage") {
+        inShape = false;
+    }
+});
+
+mp.events.add("garbageMenuCancel", () => {
+    if (browser != null) {
+        browser.destroy();
+        browser = null;
+        mp.gui.cursor.show(false, false);
+    }
+});
+
+mp.events.add("garbageMenuOpen", () => {
+    // mp.console.logError("inShape: "+inShape+" browser: "+ browser, true, true);
+    if (inShape && browser == null) {
+      // mp.console.logError("create new browser", true, true);
+        browser = mp.browsers.new("package://public/work/web/index.html");
+        mp.gui.cursor.show(true, true);
+    } else if (browser.active == false) {
+        // mp.console.logError("open browser", true, true);
+        browser.active = true;
+        mp.gui.cursor.show(true, true);
+    }
+});
+
+mp.events.add("WORK:START", () => {
+    mp.game.graphics.notify('~g~Вы начали работу!');
+
+    if (browser != null) {
+        browser.active = false;
+        mp.gui.cursor.show(false, false);
+    }
+
+    global.anyEvents.SendServer(() => mp.events.callRemote('SERVER:WORK:START'));
+});
+
+mp.events.add("WORK:END",() => {
+    mp.game.graphics.notify('~r~Вы закончили работу!');
+
+    if (browser != null) {
+        browser.destroy();
+        browser = null;
+        mp.gui.cursor.show(false, false);
+    }
+
+        global.anyEvents.SendServer(() => mp.events.callRemote('SERVER:WORK:END'));
+});
+*/
