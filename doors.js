@@ -1,28 +1,21 @@
-const VENDING_MACHINES = [
-    mp.game.joaat("prop_vend_soda_01"),
-    mp.game.joaat("prop_vend_soda_02"),
-];
-
-function getNearestVendingHandle(player)
-{
-    VENDING_MACHINES.forEach(machine => {
-
-        var handle = mp.game.object.getClosestObjectOfType(player.position.x, player.position.y, player.position.z, 2, machine, false, true, true)
-
-        if(handle)
+mp.events.add('setDoorLocked', function (model, x, y, z, locked, angle, isBarrier) {
+    try {
+        if(isBarrier)
         {
-            return handle;
+            object = mp.game.object.getClosestObjectOfType(x, y, z, 2, model, false, false, false);
+            if(locked)
+            {
+                object.setRotation(0,90,0,true);
+            }
+            else
+            { 
+                object.setRotation(0,0,0,true);
+            }
+            return;
         }
-    });
-}
-
-function tryBuySprunk()
-{
-    if(getNearestVendingHandle(mp.players.local))
-        global.anyEvents.SendServer(() => mp.events.callRemote("buyVendingSprunk"));
-
-}
-
-mp.keys.bind(Keys.VK_E, false, () => {
-    tryBuySprunk();
+        mp.game1.invoke("0x428CA6DBD1094446", mp.game.object.getClosestObjectOfType(x, y, z, 2, model, false, false, false));
+        mp.game1.object.doorControl(model, x, y, z, locked, 0, 0, angle);
+    } catch (e) {
+        logger.error(e);
+    }
 });
